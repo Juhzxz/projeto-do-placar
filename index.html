@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar de Futebol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Placar do Jogo</h1>
+        
+        <div class="placar">
+            <div class="time">
+                <h2>Time A</h2>
+                <p id="placar-time-a">0</p>
+                <button onclick="marcarGol('a')">Marcar Gol</button>
+            </div>
+
+            <div class="time">
+                <h2>Time B</h2>
+                <p id="placar-time-b">0</p>
+                <button onclick="marcarGol('b')">Marcar Gol</button>
+            </div>
+        </div>
+
+        <div class="tempo">
+            <h2>Tempo</h2>
+            <p id="tempo-jogo">00:00</p>
+            <button onclick="iniciarTemporizador()">Iniciar Tempo</button>
+            <button onclick="pararTemporizador()">Parar Tempo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
